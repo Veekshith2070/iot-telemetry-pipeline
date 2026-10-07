@@ -18,7 +18,7 @@ flowchart TD
     E --> G["Tool 2: ChromaDB RAG"]
     F --> H["Incident Report and Remediation"]
     G --> H
-
+```
 ---
 
 ## 🚀 Key Features

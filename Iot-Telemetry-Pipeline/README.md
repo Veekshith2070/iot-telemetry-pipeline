@@ -10,14 +10,14 @@ The system ingests multi-sensor IoT time-series logs, detects operational anomal
 
 ```mermaid
 flowchart TD
-    A[IoT Sensor Streams] --> B["pipeline.py: Z-Score Anomaly Detection"]
+    A["IoT Sensor Streams"] --> B["pipeline.py: Anomaly Detection"]
     B --> C["processed_telemetry.csv"]
-    C --> D["app.py: FastAPI REST Gateway"]
-    D --> E["agent.py: Autonomous LangChain Agent"]
-    E --> F["Tool 1: Live Telemetry Inspection (Pandas)"]
-    E --> G["Tool 2: Semantic RAG Search (ChromaDB)"]
-    F & G --> H["Structured Incident Report & Fix"]
-```
+    C --> D["app.py: FastAPI Gateway"]
+    D --> E["agent.py: LangChain Agent"]
+    E --> F["Tool 1: Pandas Telemetry"]
+    E --> G["Tool 2: ChromaDB RAG"]
+    F --> H["Incident Report and Remediation"]
+    G --> H
 
 ---
 
